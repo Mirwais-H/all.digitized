@@ -458,8 +458,8 @@ section#products {
     font-size: 1.75rem;
   }
 
-  #cart-summary {
-    padding: 30px 20px;
+  .search-container {
+    visibility: hidden;
   }
 }
 
