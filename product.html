@@ -57,43 +57,57 @@
                 </a>
               </li>
               <li class="list">
-                <a href="#" class="nav-link">
-                  <i class="bx bx-heart icon"></i>
-                  <span class="link">Likes</span>
+                <a href="about.html" class="nav-link">
+                  <i class='bx bxs-user-badge icon'></i>
+                  <span class="link">About us!</span>
                 </a>
               </li>
               <li class="list">
-                <a href="#" class="nav-link">
-                  <i class="bx bx-folder-open icon"></i>
-                  <span class="link">Files</span>
+                <a href="help.html" class="nav-link">
+                  <i class='bx bx-help-circle icon'></i>
+                  <span class="link">Help</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
+        <div class="search-container">
+          <input type="text" class="search-bar" id="searchInput" placeholder="Search digital products...">
+          <button class="search-btn" onclick="searchProducts()">
+            <i class='bx bx-search'></i>
+          </button>
+        </div>
+        <div id="results"></div> <!-- Container for displaying results -->
       </nav>
+
       <section class="overlay"></section>
   
 
     <main>
         <!-- Products Section -->
         <section id="products">
-            <div class="products-grid">
-                
-                <section id="products">
-                    <div class="product">
-                        <!-- Add Stripe Buy Button Here -->
-                        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-                        <stripe-buy-button
-                            buy-button-id="buy_btn_1QDFfUIeL9RKaszn8U8nr0nm"
-                            publishable-key="pk_live_51QCCZ7IeL9RKasznYRxSf3qYFoI0Rw2CJwKQu3bckrt8DgnqbZnyty2VqAQrWiBgAmk4Lq8xtBXFkm8JzTVVR7bL00XLlmqsJ3"
-                        >
-                        </stripe-buy-button>
-                    </div>
-                    <!-- Add more products similarly -->
-                </section>
-                
-            </div>
+          <div class="products-grid">
+            <section id="products">
+                <div class="product">
+                    <!-- Add Stripe Buy Button Here -->
+                    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                      buy-button-id="buy_btn_1QDd9EDPBNraHLd9J6dwqQu7"
+                      publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                      >
+                    </stripe-buy-button>
+                </div>
+                <div class="product">
+                  <!-- Add Stripe Buy Button Here -->
+                  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                  <stripe-buy-button
+                  buy-button-id="buy_btn_1QDdKXDPBNraHLd9YH8Wih7a"
+                  publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                >
+                </stripe-buy-button>
+              </div>
+            </section>
+          </div>
         </section>
 
     </main>
@@ -102,28 +116,6 @@
 </body>
 </html>
 
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to All Digitized, your go-to online store for digital products. We offer high-quality eBooks, software, and online courses designed to meet your needs. Whether you're looking to learn new skills or enhance your digital toolkit, we have the products for you.</p>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need support, feel free to reach out via the following methods:</p>
-            <ul>
-                <li>Email: <a href="mailto:support@alldigitized.com">support@alldigitized.com</a></li>
-                <li>Phone: (123) 456-7890</li>
-                <li>Follow us on social media:</li>
-            </ul>
-            <div class="social-links">
-                <a href="https://twitter.com" target="_blank">Twitter</a> |
-                <a href="https://facebook.com" target="_blank">Facebook</a> |
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-            </div>
-        </section>
     </main>
 
     <script src="script.js"></script>
