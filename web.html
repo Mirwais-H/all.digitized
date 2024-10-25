@@ -57,33 +57,57 @@
                 </a>
               </li>
               <li class="list">
-                <a href="#" class="nav-link">
-                  <i class="bx bx-heart icon"></i>
-                  <span class="link">Likes</span>
+                <a href="about.html" class="nav-link">
+                  <i class='bx bxs-user-badge icon'></i>
+                  <span class="link">About us!</span>
                 </a>
               </li>
               <li class="list">
-                <a href="#" class="nav-link">
-                  <i class="bx bx-folder-open icon"></i>
-                  <span class="link">Files</span>
+                <a href="help.html" class="nav-link">
+                  <i class='bx bx-help-circle icon'></i>
+                  <span class="link">Help</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
+        <div class="search-container">
+          <input type="text" class="search-bar" id="searchInput" placeholder="Search digital products...">
+          <button class="search-btn" onclick="searchProducts()">
+            <i class='bx bx-search'></i>
+          </button>
+        </div>
+        <div id="results"></div> <!-- Container for displaying results -->
       </nav>
       <section class="overlay"></section>
   
 
     <main>
-      <div class="construction-container">
-        <div class="construction-content">
-          <h1>🚧 Under Construction 🚧</h1>
-          <p>Our website is currently being updated. We'll be back soon!</p>
-          <p>Thank you for your patience.</p>
-          <a href="help.html" class="contact-button">Contact Us</a>
-        </div>
-      </div>
+        <!-- Products Section -->
+        <section id="products">
+          <div class="products-grid">
+            <section id="products">
+                <div class="product">
+                    <!-- Add Stripe Buy Button Here -->
+                    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                      buy-button-id="buy_btn_1QDd9EDPBNraHLd9J6dwqQu7"
+                      publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                      >
+                    </stripe-buy-button>
+                </div>
+                <div class="product">
+                  <!-- Add Stripe Buy Button Here -->
+                  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                  <stripe-buy-button
+                  buy-button-id="buy_btn_1QDdKXDPBNraHLd9YH8Wih7a"
+                  publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                >
+                </stripe-buy-button>
+              </div>
+            </section>
+          </div>
+        </section>
 
     </main>
 
