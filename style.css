@@ -17,7 +17,7 @@ body {
 
 /* Navigation Styles */
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 70px;
@@ -101,6 +101,67 @@ nav.open .sidebar {
 .lists .nav-link:hover .icon,
 .lists .nav-link:hover .link {
   color: #fff;
+}
+
+/* Styling for the search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-left: 250px;
+}
+
+.search-bar {
+  width: 300px;
+  height: 40px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #0073e6;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  width: 400px; /* Expands on focus */
+}
+
+.search-btn {
+  background-color: #0073e6;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px;
+}
+
+.search-btn:hover {
+  background-color: #005bb5;
+}
+
+.search-btn i {
+  font-size: 20px;
+  animation: bounce 1.2s infinite;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.result-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
 /* Overlay */
@@ -274,6 +335,104 @@ section#products {
   background-color: #0056b3;
 }
 
+/* Help Form */
+.help-form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #529aff28;
+  margin-top: 60px;
+  height: 100%;
+  width: 100%;
+}
+
+.help-header {
+  text-align: center;
+}
+
+.help-form {
+  background: #007bff8f;
+  color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.help-form h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.help-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.help-form input,
+.help-form select,
+.help-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: rgba(250, 247, 247, 0.92);
+  outline: none;
+}
+
+/* Rating Stars Neumorphism */
+.rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  display: inline-flex;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.rating input:checked ~ label,
+.rating input:hover ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #fbc31b;
+}
+
+.one {
+  color: rgba(255, 255, 255, 0);
+}
+
+.help-form button {
+  padding: 0.75rem;
+  width: 200px;
+  border: none;
+  border-radius: 15px;
+  background-color: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  transition: background-color 0.3s ease;
+}
+
+.help-form button:hover {
+  background-color: #074fc2;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   header h1 {
@@ -303,3 +462,103 @@ section#products {
     padding: 30px 20px;
   }
 }
+
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-bottom: 50px
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+
+/* General styles */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 50px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  position: relative;
+}
+
+.social:hover {
+  transform: translateY(-5px);
+  background-color: #3498db;
+}
+
+.social .icon {
+  font-size: 1.8em;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social:hover .icon {
+  color: #fff;
+}
+
+/* Additional animation effect */
+.social::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  z-index: -1;
+  transition: width 0.5s, height 0.5s;
+}
+
+.social:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+/* Social media icon hover specific color themes */
+.social:hover:nth-child(1) {
+  background-color: #000000; /* TikTok black theme */
+}
+
+.social:hover:nth-child(2) {
+  background-color: #E1306C; /* Instagram pink theme */
+}
+
+.social:hover:nth-child(3) {
+  background-color: #3b5998; /* Facebook blue theme */
+}
+
+.social:hover:nth-child(4) {
+  background-color: #1DA1F2; /* Twitter light blue theme */
+}
+
