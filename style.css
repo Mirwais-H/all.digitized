@@ -161,7 +161,7 @@ header h1 {
   padding: 50px;
   text-align: center;
   margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 50px;
   width: 1230px;
   font-size: 20px;
 }
@@ -192,7 +192,7 @@ header h1 {
   justify-content: space-around;
   margin: 20px 0;
   width: 1220px;
-  margin-left: 105px;
+  margin-left: 50px;
 }
 
 .promo-item {
