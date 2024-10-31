@@ -39,9 +39,9 @@
                 </a>
               </li>
               <li class="list">
-                <a href="trend.html" class="nav-link">
-                    <i class="bx bxs-hot icon"></i>
-                  <span class="link">Trending</span>
+                <a href="course.html" class="nav-link">
+                  <i class='bx bx-book icon'></i>
+                  <span class="link">Courses</span>
                 </a>
               </li>
               <li class="list">
@@ -77,23 +77,29 @@
   
 
     <main>
-      <!-- Products Section -->
-      <section id="products">
-        <div class="products-grid">
-          <section id="products">
-              <div class="product">
-                <!-- Add Stripe Buy Button Here -->
-                <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-                <stripe-buy-button
-                buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
-                publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-              >
-              </stripe-buy-button>
-            </div>
-          </section>
+ <!-- Products Section -->
+ <section id="products">
+  <div class="products-grid">
+    <section id="products">
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('https://tinyurl.com/t-shirt-des');"></div>
+        <div class="product-info">
+          <h2 class="product-title">T-shirt Designs</h2>
+          <p class="product-price">$1.00</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+        
+        <stripe-buy-button
+        buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
+        publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+      >
+      </stripe-buy-button>
         </div>
-      </section>
-
+      </div>
+    </section> 
+  </div>  
+</section>
     </main>
 
     <script src="script.js"></script>
