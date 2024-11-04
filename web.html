@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for the best digital products including eBooks, software, and online courses. Instant downloads and secure checkout.">
+    <meta name="keywords" content="digital products, eBooks, software, online courses, instant download, digital store">
+    <meta name="author" content="Your Store Name">
+    <title>All Digitized</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">All Digitized</span>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">All Digitized</span>
+          </div>
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">Dashboard</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="product.html" class="nav-link">
+                    <i class="bx bx-package icon"></i>
+                  <span class="link">All products</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="course.html" class="nav-link">
+                  <i class='bx bx-book icon'></i>
+                  <span class="link">Courses</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="web.html" class="nav-link">
+                    <i class="bx bx-expand-horizontal icon"></i>
+                  <span class="link">Web Apps/Forms</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="print.html" class="nav-link">
+                    <i class='bx bx-printer icon'></i>
+                  <span class="link">Printables</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class='bx bxs-user-badge icon'></i>
+                  <span class="link">About us!</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="help.html" class="nav-link">
+                  <i class='bx bx-help-circle icon'></i>
+                  <span class="link">Help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+  
+
+    <main>
+<!-- Products Section -->
+<section id="products">
+  <div class="products-grid">
+    <section id="products">
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/br-login.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">login Page</h2>
+          <p class="product-price">$3.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('loginPage1Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay" id="loginPage1Details">
+        <button class="close-btn" onclick="toggleProductDetails('loginPage1Details')"><i class='bx bx-x icon'></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Login page</h2>
+          <section class="wrapper" id="wrapper1">
+            <section class="image-grid">
+              <img src="images/br-login.png" alt="Todo App" />
+              <img src="images/br-login-ac.png" alt="Add Todo" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant login page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$3.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QDd9EDPBNraHLd9J6dwqQu7"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/todo-app.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">To Do App</h2>
+          <p class="product-price">$4.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('toDoApp1Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay" id="toDoApp1Details">
+        <button class="close-btn" onclick="toggleProductDetails('toDoApp1Details')"><i class='bx bx-x icon'></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">To Do App</h2>
+          <section class="wrapper" id="wrapper2">
+            <section class="image-grid">
+              <img src="images/todo-app.png" alt="Todo App" />
+              <img src="images/todo-add.png" alt="Add Todo" />
+              <img src="images/todo-done.png" alt="Todo Done" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant To-Do App which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$4.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QDdKXDPBNraHLd9YH8Wih7a"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/login-page.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">Multi-step login page</h2>
+          <p class="product-price">$2.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('multiStepLogin1Details')">View Product</button>
+        </div>
+      </div>
+    
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay" id="multiStepLogin1Details">
+        <button class="close-btn" onclick="toggleProductDetails('multiStepLogin1Details')"><i class='bx bx-x icon'></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Multi-step login page</h2>
+          <section class="wrapper" id="wrapper3">
+            <section class="image-grid">
+              <img src="images/2-step-1.png" alt="Add Todo" />
+              <img src="images/2-step-2.png" alt="Todo Done" />
+              <img src="images/2-step-zoom.png" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            A multi-step login page improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$2.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+          <stripe-buy-button
+          buy-button-id="buy_btn_1QFk4ZDPBNraHLd9aib6HtiD"
+          publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+        >
+        </stripe-buy-button>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="products">
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/2-step-log1.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">Multi-step Login Page</h2>
+          <p class="product-price">$2.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('multiStepLogin2Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay2" id="multiStepLogin2Details">
+        <button class="close-btn" onclick="toggleProductDetails('multiStepLogin2Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Multi-step Login Page</h2>
+          <section class="wrapper" id="wrapper4">
+            <section class="image-grid">
+              <img src="images/2-step-log1.png" alt="Todo App" />
+              <img src="images/2-step-log-1.1.png" alt="Add Todo" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant login page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$2.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFk4zDPBNraHLd9EOy6zOYw"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/green-main.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">Login Page</h2>
+          <p class="product-price">$1.50</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('loginPage2Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay2" id="loginPage2Details">
+        <button class="close-btn" onclick="toggleProductDetails('loginPage2Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Login Page</h2>
+          <section class="wrapper" id="wrapper5">
+            <section class="image-grid">
+              <img src="images/green-zoom-TOP.png" alt="Todo App" />
+              <img src="images/green-zoom-DWO.png" alt="Todo App" />
+              <img src="images/green-zoom-UP.png" alt="Todo App" />
+              <img src="images/green-main.png" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant login page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$1.50</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFjxNDPBNraHLd9r6pUmlGh"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/yellow.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">Login Page</h2>
+          <p class="product-price">$2.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('loginPage3Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay2" id="loginPage3Details">
+        <button class="close-btn" onclick="toggleProductDetails('loginPage3Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Login Page</h2>
+          <section class="wrapper" id="wrapper6">
+            <section class="image-grid">
+              <img src="images/yellow.png" alt="Todo App" />
+              <img src="images/yellow-bea-login.png" alt="Add Todo" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant login page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$2.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFjxNDPBNraHLd9r6pUmlGh"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/2-sec-right.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">2 sided Login Page</h2>
+          <p class="product-price">$2.00</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('2-side-log-Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay3" id="2-side-log-Details">
+        <button class="close-btn" onclick="toggleProductDetails('2-side-log-Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">2 sided Login Page</h2>
+          <section class="wrapper" id="wrapper7">
+            <section class="image-grid">
+              <img src="images/2-sec-left.png" alt="Todo App" />
+              <img src="images/2-sec-right.png" alt="Todo App" />
+              <img src="images/2-sec-both.png" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant 2 sided Login Page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$2.00</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFjyWDPBNraHLd9YaByskLC"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/graPricing-whole.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">Pricing Cards</h2>
+          <p class="product-price">$3.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('pricing1-Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay3" id="pricing1-Details">
+        <button class="close-btn" onclick="toggleProductDetails('pricing1-Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Pricing Cards</h2>
+          <section class="wrapper" id="wrapper8">
+            <section class="image-grid">
+              <img src="images/graPricing-basic.png" alt="Todo App" />
+              <img src="images/graPricing-standard.png" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant Pricing Cards which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$3.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFk3xDPBNraHLd92ZzsYewG"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/photoBack-main.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">Login Page</h2>
+          <p class="product-price">$2.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('loginPage4Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay3" id="loginPage4Details">
+        <button class="close-btn" onclick="toggleProductDetails('loginPage4Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Login Page</h2>
+          <section class="wrapper" id="wrapper9">
+            <section class="image-grid">
+              <img src="images/photoBack-main.png" alt="Todo App" />
+              <img src="images/photoBack-top.png" alt="Todo App" />
+              <img src="images/photoBack-btm.png" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant Login Page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$2.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFk3YDPBNraHLd9z4Hz7bg3"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/pricing-whole.png');"></div>
+        <div class="product-info">
+          <h2 class="product-title">Login Page</h2>
+          <p class="product-price">$3.99</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('pricing2-Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay4" id="pricing2-Details">
+        <button class="close-btn" onclick="toggleProductDetails('pricing2-Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">Pricing Cards</h2>
+          <section class="wrapper" id="wrapper10">
+            <section class="image-grid">
+              <img src="images/pricing-basic.png" alt="Todo App" />
+              <img src="images/pricing-standard.png" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant Login Page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$3.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFk30DPBNraHLd9HngXnPtA"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+
+    </section>
+  </div>  
+</section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

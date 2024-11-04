@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for the best digital products including eBooks, software, and online courses. Instant downloads and secure checkout.">
+    <meta name="keywords" content="digital products, eBooks, software, online courses, instant download, digital store">
+    <meta name="author" content="Your Store Name">
+    <title>All Digitized</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">All Digitized</span>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">All Digitized</span>
+          </div>
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">Dashboard</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="product.html" class="nav-link">
+                    <i class="bx bx-package icon"></i>
+                  <span class="link">All products</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="course.html" class="nav-link">
+                  <i class='bx bx-book icon'></i>
+                  <span class="link">Courses</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="web.html" class="nav-link">
+                    <i class="bx bx-expand-horizontal icon"></i>
+                  <span class="link">Web Apps/Forms</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="print.html" class="nav-link">
+                    <i class='bx bx-printer icon'></i>
+                  <span class="link">Printables</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class='bx bxs-user-badge icon'></i>
+                  <span class="link">About us!</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="help.html" class="nav-link">
+                  <i class='bx bx-help-circle icon'></i>
+                  <span class="link">Help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+  
+
+    <main>
+      <section class="help-form-section">
+        <form id="help-form" class="help-form" action="https://formspree.io/f/meojeoqb" method="POST">
+          <div class="help-header">
+            <h2>Help Form</h2>
+          </div>
+          <label for="name">Name:</label>
+          <input type="name" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="_replyto" required>
+
+          <label for="feedback-type">Issue</label>
+          <select id="feedback-type" name="feedback-type" required>
+            <option value="">Select Issue Type</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="feedback">Feedback</option>
+            <option value="general">Purchase</option>
+            <option value="other">Other</option> <!-- Changed value to "other" -->
+          </select>
+          
+          <!-- Hidden input that will appear when "Other" is selected -->
+          <div id="other-issue-container" style="display: none;">
+            <label for="other-issue">Please specify:</label>
+            <input type="text" id="other-issue" name="other-issue" placeholder="Describe the issue" />
+          </div>
+          
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="3" required></textarea>
+
+          <label for="rating">Rating:</label>
+          <div class="rating">
+            <input type="radio" id="rating-5" name="rating" value="5">
+            <label for="rating-5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating-4" name="rating" value="4">
+            <label for="rating-4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating-3" name="rating" value="3">
+            <label for="rating-3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating-2" name="rating" value="2">
+            <label for="rating-2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating-1" name="rating" value="1">
+            <label for="rating-1" title="1 star">&#9733;</label>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

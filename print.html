@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for the best digital products including eBooks, software, and online courses. Instant downloads and secure checkout.">
+    <meta name="keywords" content="digital products, eBooks, software, online courses, instant download, digital store">
+    <meta name="author" content="Your Store Name">
+    <title>All Digitized</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">All Digitized</span>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">All Digitized</span>
+          </div>
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">Dashboard</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="product.html" class="nav-link">
+                    <i class="bx bx-package icon"></i>
+                  <span class="link">All products</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="course.html" class="nav-link">
+                  <i class='bx bx-book icon'></i>
+                  <span class="link">Courses</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="web.html" class="nav-link">
+                    <i class="bx bx-expand-horizontal icon"></i>
+                  <span class="link">Web Apps/Forms</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="print.html" class="nav-link">
+                    <i class='bx bx-printer icon'></i>
+                  <span class="link">Printables</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class='bx bxs-user-badge icon'></i>
+                  <span class="link">About us!</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="help.html" class="nav-link">
+                  <i class='bx bx-help-circle icon'></i>
+                  <span class="link">Help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+      <section class="overlay"></section>
+  
+
+    <main>
+ <!-- Products Section -->
+ <section id="products">
+  <div class="products-grid">
+    <section id="products">
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/printImg-main.webp');"></div>
+        <div class="product-info">
+          <h2 class="product-title">T-shirt Designs</h2>
+          <p class="product-price">$1.00</p>
+          <button class="view-product-btn" onclick="toggleProductDetails('print1Details')">View Product</button>
+        </div>
+      </div>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay" id="print1Details">
+        <button class="close-btn" onclick="toggleProductDetails('print1Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">T-shirt Designs</h2>
+          <section class="wrapper" id="wrapper1">
+            <section class="image-grid">
+              <img src="images/printImg-main.webp" alt="Todo App" />
+              <img src="images/printImg1.jpeg" alt="Todo App" />
+              <img src="images/printImg2.jpeg" alt="Todo App" />
+              <img src="images/printImg3.jpeg" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant English Course which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$1.00</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+        </div>
+      </div>
+    </section> 
+  </div>  
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
