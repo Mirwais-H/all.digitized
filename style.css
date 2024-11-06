@@ -154,20 +154,21 @@ header h1 {
 main .hero-section {
   display: flex;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  margin: 40px;
+  margin: 2px;
   margin-top: 100px;
+  width: 99%;
 }
 
 .hero-content {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .hero-content h1 {
-  font-size: 3em;
+  font-size: 40px;
   color: #2478ff;
 }
 
@@ -199,6 +200,7 @@ main .hero-section {
 }
 
 .hero-image {
+  width: 300px;
   position: relative;
   margin-left: auto;
 }
@@ -500,7 +502,7 @@ i.button:active {
   .product-details-overlay {
     width: 90%;
     height: 90%;
-    margin-top: -30px;
+    margin-top: -140px;
     margin-left: -19px;
     border-radius: 15;
     padding: 20px;
@@ -509,7 +511,7 @@ i.button:active {
   .product-details-overlay2 {
     width: 90%;
     height: 90%;
-    margin-top: -1500px;
+    margin-top: -1600px;
     margin-left: -19px;
     border-radius: 15;
     padding: 20px;
@@ -518,7 +520,7 @@ i.button:active {
   .product-details-overlay3 {
     width: 90%;
     height: 90%;
-    margin-top: -2950px;
+    margin-top: -3060px;
     margin-left: -19px;
     border-radius: 15;
     padding: 20px;
@@ -527,7 +529,16 @@ i.button:active {
   .product-details-overlay4 {
     width: 90%;
     height: 90%;
-    margin-top: -4400px;
+    margin-top: -3690px;
+    margin-left: -19px;
+    border-radius: 15;
+    padding: 20px;
+  }
+
+  .product-details-overlay5 {
+    width: 90%;
+    height: 90%;
+    margin-top: -4790px;
     margin-left: -19px;
     border-radius: 15;
     padding: 20px;
@@ -577,25 +588,6 @@ i.button:active {
     width: 300px;
   }
 
-  .image-container .carousel {
-    height: 200px;
-    width: 100%;
-  }
-
-  .carousel img {
-    height: 180px;
-    width: 300px;
-    margin-left: 49px;
-    border-radius: 8px;
-    border: 5px solid #ffffff;
-  }
-
-  /* Button Adjustments */
-  i.button {
-    height: 30px;
-    width: 30px;
-    font-size: 12px;
-  }
 }
 
 
@@ -846,18 +838,40 @@ i.button:active {
     font-size: 1.75rem;
   }
 
-  .hero {
-    width: 95%;
-    margin-left: 10px;
-  }
-
-  .promotions {
-    width: 95%;
-    margin-left: 10px;
+  .hero-section {
+    width: 90%;
+    margin: 0px;
+    font-size: 10px;
   }
 
   .content-container {
     width: 95%;
+  }
+
+  .hero-image {
+    width: 190px;
+    position: relative;
+    margin-left: auto;
+  }
+  
+  .image-circle {
+    width: 190px;
+    height: 190px;
+  }
+  
+  .image-circle img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .quality {
+    top: 0px;
+    right: -20px;
+  }
+  
+  .editable {
+    bottom: -10px;
+    left: -10px;
   }
 }
 
@@ -1003,7 +1017,7 @@ p {
 }
 
 .star-rating .star {
-  font-size: 1.8em;
+  font-size: 5px;
   color: #ddd;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -1078,16 +1092,13 @@ p {
 }
 
 
-
-
-
-
 footer {
   background-color: #222;
   color: #fff;
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
+  margin-bottom: 0;
 }
 
 .footer-content p {
