@@ -776,7 +776,7 @@ i.button:active {
 }
 
 .rating label {
-  font-size: 50px;
+  font-size: 40px;
   color: #ffffff;
   cursor: pointer;
   padding: 0 5px;
@@ -1017,7 +1017,7 @@ p {
 }
 
 .star-rating .star {
-  font-size: 5px;
+  font-size: 30px;
   color: #ddd;
   cursor: pointer;
   transition: color 0.3s ease;
