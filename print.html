@@ -30,7 +30,7 @@
               <li class="list">
                 <a href="index.html" class="nav-link">
                   <i class="bx bx-home-alt icon"></i>
-                  <span class="link">Dashboard</span>
+                  <span class="link">Home</span>
                 </a>
               </li>
               <li class="list">
@@ -81,6 +81,7 @@
  <!-- Products Section -->
  <section id="products">
   <div class="products-grid">
+    <p class="product-section">T-shirt Designs</p>
     <section id="products">
       <div class="product-card">
         <div class="product-image" style="background-image: url('images/printImg-main.webp');"></div>
@@ -116,13 +117,43 @@
               publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
             >
             </stripe-buy-button>
+            <div class="separator-icon">
+              <hr>
+              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
+              <hr>
+            </div>
+            <div class="review-section" id="printables1ReviewSection">
+              <h2>Leave a Review</h2>
+              <input type="text" id="printables1NameInput" placeholder="Your Name" />
+              <div class="star-rating" id="printables1StarRating">
+                  <span class="star" data-rating="1">&#9733;</span>
+                  <span class="star" data-rating="2">&#9733;</span>
+                  <span class="star" data-rating="3">&#9733;</span>
+                  <span class="star" data-rating="4">&#9733;</span>
+                  <span class="star" data-rating="5">&#9733;</span>
+              </div>
+              <textarea id="printables1ReviewInput" placeholder="Write your review here..."></textarea>
+              <button onclick="saveReview('printables1')">Submit Review</button>
+          </div>
+          <div class="reviews-container" id="printables1ReviewsContainer">
+              <h2>Reviews</h2>
+              <div id="printables1SavedReviews"></div>
+          </div>
         </div>
       </div>
     </section> 
   </div>  
 </section>
     </main>
-
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 All Digitized. All rights reserved.</p>
+        <div class="thanks-logos">
+          <img src="https://freelogopng.com/images/all_img/1685814539stripe-icon-png.png" alt="Stripe" class="logo">
+          <img src="images/codingnepal.png" alt="Coding Nepal" class="logo">
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
