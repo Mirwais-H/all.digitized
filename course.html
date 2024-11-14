@@ -86,7 +86,7 @@
           <div class="product-image" style="background-image: url('images/engCourse-main.png');"></div>
           <div class="product-info">
             <h2 class="product-title">English Course</h2>
-            <p class="product-price">$9.99</p>
+  
             <button class="view-product-btn" onclick="toggleProductDetails('course1Details')">View Product</button>
           </div>
         </div>
@@ -110,37 +110,36 @@
             <script async
             src="https://js.stripe.com/v3/buy-button.js">
           </script>
-            <stripe-buy-button
-            buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
-            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-
-                <div class="review-section" id="course1ReviewSection">
-                  <h2>Leave a Review</h2>
-                  <input type="text" id="course1NameInput" placeholder="Your Name" />
-                  <div class="star-rating" id="course1StarRating">
-                      <span class="star" data-rating="1">&#9733;</span>
-                      <span class="star" data-rating="2">&#9733;</span>
-                      <span class="star" data-rating="3">&#9733;</span>
-                      <span class="star" data-rating="4">&#9733;</span>
-                      <span class="star" data-rating="5">&#9733;</span>
-                  </div>
-                  <textarea id="course1ReviewInput" placeholder="Write your review here..."></textarea>
-                  <button onclick="saveReview('course1')">Submit Review</button>
+          <stripe-buy-button
+          buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
+          publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          <div class="separator-icon">
+            <hr>
+            <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
+            <hr>
+          </div>
+  
+            <div class="review-section" id="course1ReviewSection">
+              <h2>Leave a Review</h2>
+              <input type="text" id="course1NameInput" placeholder="Your Name" />
+              <div class="star-rating" id="course1StarRating">
+                  <span class="star" data-rating="1">&#9733;</span>
+                  <span class="star" data-rating="2">&#9733;</span>
+                  <span class="star" data-rating="3">&#9733;</span>
+                  <span class="star" data-rating="4">&#9733;</span>
+                  <span class="star" data-rating="5">&#9733;</span>
               </div>
-              <div class="reviews-container" id="course1ReviewsContainer">
-                  <h2>Reviews</h2>
-                  <div id="course1SavedReviews"></div>
-              </div>
+              <textarea id="course1ReviewInput" placeholder="Write your review here..."></textarea>
+              <button onclick="saveReview('course1')">Submit Review</button>
+          </div>
+          <div class="reviews-container" id="course1ReviewsContainer">
+              <h2>Reviews</h2>
+              <div id="course1SavedReviews"></div>
+          </div>
           </div>
         </div>
-
       </section>
 
       
