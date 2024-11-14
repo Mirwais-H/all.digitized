@@ -259,7 +259,7 @@ section#products {
   margin-left: -80px;
   width: 100%;
   height: 100%;
-  background-color: #ffffffee;
+  background-color: #4a4a4a;
   border-radius: 15px;
   color: white;
   z-index: 1000;
@@ -359,7 +359,7 @@ section#products {
   max-width: 900px;
   width: 90%;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -406,7 +406,7 @@ section#products {
 
 .product-detail-price {
   font-size: 30px;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   margin-bottom: 15px;
   margin-left: 45%;
@@ -430,9 +430,12 @@ section#products {
 }
 
 .close-btn:hover {
-  background-color: #d20202;
+  background-color: #ee0000;
   transform: scale(1.1);
+  border: 5px double white; /* Double white border with a width of 5px */
 }
+
+
 
 .wrapper {
   display: flex;
@@ -611,13 +614,13 @@ i.button:active {
 }
 
 .product-image {
-  width: 250px;
-  height: 200px;
+  width: 100%; /* Make the image span the full width of the card */
+  height: 300px; /* Set a fixed height for the image */
   background-size: cover;
   background-position: center;
-  margin-left: 50px;
-  margin-top: 20px;
-  border-radius: 15px;
+  margin: 0; /* Remove margins to align it with the top of the card */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .product-info {
@@ -635,8 +638,7 @@ i.button:active {
   font-size: 30px;
   color: #000000;
   font-weight: bold;
-  margin-bottom: 15px;
-  margin-left: 110px
+  margin-bottom: 0px;
 }
 
 .view-product-btn {
@@ -649,12 +651,13 @@ i.button:active {
   margin-bottom: 20px;
   font-size: 1em;
   transition: background-color 0.3s ease;
-  width: 290px;
+  width: 100%; /* Make the button span the full width of the card */
 }
 
 .view-product-btn:hover {
   background-color: #0056b3;
 }
+
 
 
 .section-box {
@@ -1508,12 +1511,12 @@ body.show-emoji-picker em-emoji-picker {
 .separator-icon hr {
   width: 40%;
   border: none;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #ffffff;
 }
 
 .separator-icon span {
   margin: 0 10px;
-  font-size: 20px;
-  color: #777;
+  font-size: 25px;
+  color: #ffffff;
 }
  
