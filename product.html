@@ -83,14 +83,19 @@
     <p class="product-section">Login/Signup Pages</p>
     <section id="products">
       <!-- Product 1 -->
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/br-login.png');"></div>
-        <div class="product-info">
+      <a href="#" onclick="toggleProductDetails('loginPage1Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/br-login.png');"></div>
+          <div class="product-info">
             <h2 class="product-title">Login Page</h2>
-
-            <button class="view-product-btn" onclick="toggleProductDetails('loginPage1Details')">View Product</button>
+            <p class="product-price">$3.99</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QDd9EDPBNraHLd9J6dwqQu7"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85">
+        </stripe-buy-button>
+          </div>
         </div>
-    </div>
+      </a>      
     
     <!-- Full-screen Product Details Section -->
     <div class="product-details-overlay" id="loginPage1Details">
@@ -139,15 +144,20 @@
     </div>
     
     
-    
-    <div class="product-card">
+    <a href="#" onclick="toggleProductDetails('loginPage3Details')" class="product-card-link">
+      <div class="product-card">
         <div class="product-image" style="background-image: url('images/yellow.png');"></div>
         <div class="product-info">
-            <h2 class="product-title">Login Page</h2>
-
-            <button class="view-product-btn" onclick="toggleProductDetails('loginPage3Details')">View Product</button>
+          <h2 class="product-title">Login Page</h2>
+          <p class="product-price">$2.99</p>
+          <stripe-buy-button
+          buy-button-id="buy_btn_1QFjy1DPBNraHLd9abL7YI3D"
+          publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+        >
+        </stripe-buy-button>
         </div>
-    </div>
+      </div>
+    </a>     
     
     <!-- Full-screen Product Details Section -->
     <div class="product-details-overlay" id="loginPage3Details">
@@ -166,9 +176,10 @@
             <p class="product-detail-price">$2.99</p>
             <script async src="https://js.stripe.com/v3/buy-button.js"></script>
             <stripe-buy-button
-                buy-button-id="buy_btn_1QFjxNDPBNraHLd9r6pUmlGh"
-                publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85">
-            </stripe-buy-button>
+            buy-button-id="buy_btn_1QFjy1DPBNraHLd9abL7YI3D"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
             <div class="separator-icon">
               <hr>
               <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
@@ -194,14 +205,20 @@
         </div>
     </div>
     
-    <div class="product-card">
+    <a href="#" onclick="toggleProductDetails('loginPage4Details')" class="product-card-link">
+      <div class="product-card">
         <div class="product-image" style="background-image: url('images/photoBack-main.png');"></div>
         <div class="product-info">
-            <h2 class="product-title">Login Page</h2>
-
-            <button class="view-product-btn" onclick="toggleProductDetails('loginPage4Details')">View Product</button>
+          <h2 class="product-title">Login Page</h2>
+          <p class="product-price">$2.99</p>
+          <stripe-buy-button
+          buy-button-id="buy_btn_1QFk3YDPBNraHLd9z4Hz7bg3"
+          publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85">
+      </stripe-buy-button>
         </div>
-    </div>
+      </div>
+    </a>
+    
     
     <!-- Full-screen Product Details Section -->
     <div class="product-details-overlay" id="loginPage4Details">
@@ -253,14 +270,21 @@
 
   
     <section id="products">
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/green-main.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">Login Page</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('loginPage2Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('loginPage2Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/green-main.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">Login Page</h2>
+            <p class="product-price">$1.50</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QFjxNDPBNraHLd9r6pUmlGh"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
+      </a>
+      
       
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay2" id="loginPage2Details">
@@ -312,14 +336,21 @@
         </div>
       </div>
 
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/2-step-log1.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">Multi-step Login Page</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('multiStepLogin2Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('multiStepLogin2Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/2-step-log1.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">Multi-step Login Page</h2>
+            <p class="product-price">$2.99</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QFk4zDPBNraHLd9EOy6zOYw"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
+      </a>
+      
       
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay2" id="multiStepLogin2Details">
@@ -369,14 +400,21 @@
         </div>
       </div>
 
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/login-page.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">Multi-step login page</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('multiStepLogin1Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('multiStepLogin1Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/login-page.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">Multi-step login page</h2>
+            <p class="product-price">$2.99</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QFk4ZDPBNraHLd9aib6HtiD"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
+      </a>
+      
     
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay2" id="multiStepLogin1Details">
@@ -429,14 +467,21 @@
     </section>
 
     <section id="products">
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/2-sec-right.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">2 sided Login Page</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('2-side-log-Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('2-side-log-Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/2-sec-right.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">2 sided Login Page</h2>
+            <p class="product-price">$2.00</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QFjyWDPBNraHLd9YaByskLC"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
+      </a>
+      
       
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay3" id="2-side-log-Details">
@@ -491,14 +536,20 @@
     <p class="product-section">Pricing Cards</p>
 
     <section id="products">
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/pricing-whole.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">Pricing Cards</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('pricing2-Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('pricing2-Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/pricing-whole.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">Pricing Cards</h2>
+            <p class="product-price">$3.99</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QFk30DPBNraHLd9HngXnPtA"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
+      </a>
       
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay4" id="pricing2-Details">
@@ -548,14 +599,21 @@
         </div>
       </div>
 
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/graPricing-whole.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">Pricing Cards</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('pricing1-Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('pricing1-Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/graPricing-whole.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">Pricing Cards</h2>
+            <p class="product-price">$3.99</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QFk3xDPBNraHLd92ZzsYewG"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
+      </a>
+      
       
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay4" id="pricing1-Details">
@@ -606,17 +664,25 @@
       </div>
     </section>
 
-    <p class="product-section">Others</p>
-    <section id="products">
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/todo-app.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">To Do App</h2>
 
-          <button class="view-product-btn" onclick="toggleProductDetails('toDoApp1Details')">View Product</button>
+    <p class="product-section">Others</p>
+
+    <section id="products">
+      <a href="#" onclick="toggleProductDetails('toDoApp1Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/todo-app.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">To Do App</h2>
+            <p class="product-price">$4.99</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QDdKXDPBNraHLd9YH8Wih7a"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
-      
+      </a>
+    
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay5" id="toDoApp1Details">
         <button class="close-btn" onclick="toggleProductDetails('toDoApp1Details')"><i class='bx bx-x icon'></i></button>
@@ -666,17 +732,156 @@
         </div>
       </div>
 
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/printImg-main.webp');"></div>
-        <div class="product-info">
-          <h2 class="product-title">T-shirt Designs</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('print1Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('toDoApp2Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/to.do.main.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">To Do App</h2>
+            <p class="product-price">$5.99</p>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1QLGzmDPBNraHLd9laa7WOwf"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
+        </div>
+      </a>
+    
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay5" id="toDoApp2Details">
+        <button class="close-btn" onclick="toggleProductDetails('toDoApp2Details')"><i class='bx bx-x icon'></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">To Do App</h2>
+          <section class="wrapper" id="wrapper2">
+            <section class="image-grid">
+              <img src="images/to.do.log.png" alt="Todo App" />
+              <img src="images/to.do.main.png" alt="Add Todo" />
+              <img src="images/to.do.add.png" alt="Todo add" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant To-Do App which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$5.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+        
+        <stripe-buy-button
+          buy-button-id="buy_btn_1QLGzmDPBNraHLd9laa7WOwf"
+          publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+        >
+        </stripe-buy-button>
+            <div class="separator-icon">
+              <hr>
+              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
+              <hr>
+            </div>
+            <div class="review-section" id="toDoApp1ReviewSection">
+              <h2>Leave a Review</h2>
+              <input type="text" id="toDoApp1NameInput" placeholder="Your Name" />
+              <div class="star-rating" id="toDoApp1StarRating">
+                  <span class="star" data-rating="1">&#9733;</span>
+                  <span class="star" data-rating="2">&#9733;</span>
+                  <span class="star" data-rating="3">&#9733;</span>
+                  <span class="star" data-rating="4">&#9733;</span>
+                  <span class="star" data-rating="5">&#9733;</span>
+              </div>
+              <textarea id="toDoApp1ReviewInput" placeholder="Write your review here..."></textarea>
+              <button onclick="saveReview('toDoApp1')">Submit Review</button>
+          </div>
+          <div class="reviews-container" id="toDoApp1ReviewsContainer">
+              <h2>Reviews</h2>
+              <div id="toDoApp1SavedReviews"></div>
+          </div>
         </div>
       </div>
+
+      <a href="#" onclick="toggleProductDetails('course1Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/engCourse-main.png');"></div>
+          <div class="product-info">
+            <h2 class="product-title">English Course</h2>
+            <p class="product-price">$9.99</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
+      </a>
       
       <!-- Full-screen Product Details Section -->
-      <div class="product-details-overlay5" id="print1Details">
+      <div class="product-details-overlay5" id="course1Details">
+        <button class="close-btn" onclick="toggleProductDetails('course1Details')"><i class='bx bx-x icon' ></i></button>
+        <div class="product-details-content">
+          <h2 class="product-overlay-title">English Course</h2>
+          <section class="wrapper" id="wrapper1">
+            <section class="image-grid">
+              <img src="images/engCourse-less.png" alt="Todo App" />
+              <img src="images/engCourse-toplesn.png" alt="Todo App" />
+              <img src="images/engCourse-btmlesn.png" alt="Todo App" />
+            </section>
+          </section>
+          <p class="product-description">
+            An elegant English Course which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
+          </p>
+          <p class="product-detail-price">$9.99</p>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+        <stripe-buy-button
+        buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
+        publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+        >
+        </stripe-buy-button>
+        <div class="separator-icon">
+          <hr>
+          <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
+          <hr>
+        </div>
+
+          <div class="review-section" id="course1ReviewSection">
+            <h2>Leave a Review</h2>
+            <input type="text" id="course1NameInput" placeholder="Your Name" />
+            <div class="star-rating" id="course1StarRating">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+            </div>
+            <textarea id="course1ReviewInput" placeholder="Write your review here..."></textarea>
+            <button onclick="saveReview('course1')">Submit Review</button>
+        </div>
+        <div class="reviews-container" id="course1ReviewsContainer">
+            <h2>Reviews</h2>
+            <div id="course1SavedReviews"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="products">
+      <a href="#" onclick="toggleProductDetails('print1Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/printImg-main.webp');"></div>
+          <div class="product-info">
+            <h2 class="product-title">T-shirt Designs</h2>
+            <p class="product-price">$1.00</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
+        </div>
+      </a>
+      
+      <!-- Full-screen Product Details Section -->
+      <div class="product-details-overlay6" id="print1Details">
         <button class="close-btn" onclick="toggleProductDetails('print1Details')"><i class='bx bx-x icon' ></i></button>
         <div class="product-details-content">
           <h2 class="product-overlay-title">T-shirt Designs</h2>
@@ -724,67 +929,12 @@
           </div>
         </div>
       </div>
-
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/engCourse-main.png');"></div>
-        <div class="product-info">
-          <h2 class="product-title">English Course</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('course1Details')">View Product</button>
-        </div>
-      </div>
-      
-      <!-- Full-screen Product Details Section -->
-      <div class="product-details-overlay5" id="course1Details">
-        <button class="close-btn" onclick="toggleProductDetails('course1Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">Pricing Cards</h2>
-          <section class="wrapper" id="wrapper1">
-            <section class="image-grid">
-              <img src="images/engCourse-less.png" alt="Todo App" />
-              <img src="images/engCourse-toplesn.png" alt="Todo App" />
-              <img src="images/engCourse-btmlesn.png" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant English Course which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$9.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-        <stripe-buy-button
-        buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
-        publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-        >
-        </stripe-buy-button>
-        <div class="separator-icon">
-          <hr>
-          <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-          <hr>
-        </div>
-
-          <div class="review-section" id="course1ReviewSection">
-            <h2>Leave a Review</h2>
-            <input type="text" id="course1NameInput" placeholder="Your Name" />
-            <div class="star-rating" id="course1StarRating">
-                <span class="star" data-rating="1">&#9733;</span>
-                <span class="star" data-rating="2">&#9733;</span>
-                <span class="star" data-rating="3">&#9733;</span>
-                <span class="star" data-rating="4">&#9733;</span>
-                <span class="star" data-rating="5">&#9733;</span>
-            </div>
-            <textarea id="course1ReviewInput" placeholder="Write your review here..."></textarea>
-            <button onclick="saveReview('course1')">Submit Review</button>
-        </div>
-        <div class="reviews-container" id="course1ReviewsContainer">
-            <h2>Reviews</h2>
-            <div id="course1SavedReviews"></div>
-        </div>
-        </div>
-      </div>
     </section>
+
   </div>  
+  <button id="goTopBtn" onclick="scrollToTop()" class="go-top-btn">
+    <i class='bx bxs-upvote icon'></i> <!-- FontAwesome Arrow Up Icon -->
+  </button>
 </section>
 
 
