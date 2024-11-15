@@ -82,20 +82,26 @@
     <div class="products-grid">
       <p class="product-section">Language Courses</p>
       <section id="products">
-        <div class="product-card">
-          <div class="product-image" style="background-image: url('images/engCourse-main.png');"></div>
-          <div class="product-info">
-            <h2 class="product-title">English Course</h2>
-  
-            <button class="view-product-btn" onclick="toggleProductDetails('course1Details')">View Product</button>
+        <a href="#" onclick="toggleProductDetails('course1Details')" class="product-card-link">
+          <div class="product-card">
+            <div class="product-image" style="background-image: url('images/engCourse-main.png');"></div>
+            <div class="product-info">
+              <h2 class="product-title">English Course</h2>
+              <p class="product-price">$9.99</p>
+              <stripe-buy-button
+              buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
+              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+              >
+              </stripe-buy-button>
+            </div>
           </div>
-        </div>
+        </a>
         
         <!-- Full-screen Product Details Section -->
         <div class="product-details-overlay" id="course1Details">
           <button class="close-btn" onclick="toggleProductDetails('course1Details')"><i class='bx bx-x icon' ></i></button>
           <div class="product-details-content">
-            <h2 class="product-overlay-title">Pricing Cards</h2>
+            <h2 class="product-overlay-title">English Course</h2>
             <section class="wrapper" id="wrapper1">
               <section class="image-grid">
                 <img src="images/engCourse-less.png" alt="Todo App" />
