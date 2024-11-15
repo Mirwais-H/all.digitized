@@ -296,3 +296,16 @@ sendMessage.addEventListener("click", (e) => handleOutgoingMessage(e));
 document.querySelector("#file-upload").addEventListener("click", () => fileInput.click());
 closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+
+// Get the button
+const goTopBtn = document.getElementById("goTopBtn");
+
+
+// Scroll to the top function
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // Smooth scrolling
+  });
+}
