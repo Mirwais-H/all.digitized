@@ -83,14 +83,20 @@
   <div class="products-grid">
     <p class="product-section">T-shirt Designs</p>
     <section id="products">
-      <div class="product-card">
-        <div class="product-image" style="background-image: url('images/printImg-main.webp');"></div>
-        <div class="product-info">
-          <h2 class="product-title">T-shirt Designs</h2>
-
-          <button class="view-product-btn" onclick="toggleProductDetails('print1Details')">View Product</button>
+      <a href="#" onclick="toggleProductDetails('print1Details')" class="product-card-link">
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('images/printImg-main.webp');"></div>
+          <div class="product-info">
+            <h2 class="product-title">T-shirt Designs</h2>
+            <p class="product-price">$1.00</p>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
+            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+          >
+          </stripe-buy-button>
+          </div>
         </div>
-      </div>
+      </a>
       
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay" id="print1Details">
@@ -158,4 +164,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
