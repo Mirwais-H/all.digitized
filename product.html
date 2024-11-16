@@ -100,47 +100,63 @@
     <!-- Full-screen Product Details Section -->
     <div class="product-details-overlay" id="loginPage1Details">
         <button class="close-btn" onclick="toggleProductDetails('loginPage1Details')"><i class='bx bx-x icon'></i></button>
-        <div class="product-details-content">
-            <h2 class="product-overlay-title">Login Page</h2>
-            <section class="wrapper" id="wrapper1">
-                <section class="image-grid">
-                    <img src="images/br-login.png" alt="Login Page" />
-                    <img src="images/br-login-ac.png" alt="Login Page" />
-                </section>
-            </section>
-            <p class="product-description">
-                An elegant login page which improves security with step-by-step guidance.
-            </p>
-            <p class="product-detail-price">$3.99</p>
-            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-            <stripe-buy-button
-                buy-button-id="buy_btn_1QDd9EDPBNraHLd9J6dwqQu7"
-                publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85">
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <!-- Review Section for Product 1 -->
-            <div class="review-section" id="loginPage1ReviewSection">
-                <h2>Leave a Review</h2>
-                <input type="text" id="loginPage1NameInput" placeholder="Your Name" />
-                <div class="star-rating" id="loginPage1StarRating">
-                    <span class="star" data-rating="1">&#9733;</span>
-                    <span class="star" data-rating="2">&#9733;</span>
-                    <span class="star" data-rating="3">&#9733;</span>
-                    <span class="star" data-rating="4">&#9733;</span>
-                    <span class="star" data-rating="5">&#9733;</span>
-                </div>
-                <textarea id="loginPage1ReviewInput" placeholder="Write your review here..."></textarea>
-                <button onclick="saveReview('loginPage1')">Submit Review</button>
-            </div>
-            <div class="reviews-container" id="loginPage1ReviewsContainer">
-                <h2>Reviews</h2>
-                <div id="loginPage1SavedReviews"></div>
-            </div>
-        </div>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                    <div class="product-image">
+                      <div class="product-image-main">
+                          <img src="images/br-login.png" alt="" class="product-main-image">
+                      </div>
+                      <div class="product-image-slider">
+                          <img src="images/br-login.png" alt="" class="image-list">
+                          <img src="images/br-login-ac.png" alt="" class="image-list">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Login page</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Login page</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(47 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$3.99</span>
+                              <span class="sale-price">$4.99</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                This modern login form features a dark brown background with clean white text and minimalistic input fields for Username and Password. The standout feature is the "SUBMIT" button, which transitions from a soft cyan to a glowing neon effect when hovered over, adding an eye-catching, interactive touch. Sleek and user-friendly, this design blends aesthetics with functionality for an engaging login experience.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/index12.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                                  buy-button-id="buy_btn_1QDd9EDPBNraHLd9J6dwqQu7"
+                                  publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85">
+                              </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
     
     
@@ -162,47 +178,65 @@
     <!-- Full-screen Product Details Section -->
     <div class="product-details-overlay" id="loginPage3Details">
         <button class="close-btn" onclick="toggleProductDetails('loginPage3Details')"><i class='bx bx-x icon'></i></button>
-        <div class="product-details-content">
-            <h2 class="product-overlay-title">Login Page</h2>
-            <section class="wrapper" id="wrapper6">
-                <section class="image-grid">
-                    <img src="images/yellow.png" alt="Todo App" />
-                    <img src="images/yellow-bea-login.png" alt="Add Todo" />
-                </section>
-            </section>
-            <p class="product-description">
-                An elegant login page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-            </p>
-            <p class="product-detail-price">$2.99</p>
-            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-            <stripe-buy-button
-            buy-button-id="buy_btn_1QFjy1DPBNraHLd9abL7YI3D"
-            publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-          >
-          </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="loginPage2ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="loginPage2NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="loginPage2StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                    <div class="product-image">
+                      <div class="product-image-main">
+                          <img src="images/yellow.png" alt="" class="product-main-image">
+                      </div>
+                      <div class="product-image-slider">
+                          <img src="images/yellow.png" alt="" class="image-list">
+                          <img src="images/yellow-bea-login.png" alt="" class="image-list">
+                          <img src="images/yellow-top.png" alt="" class="image-list">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Login page</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Login page</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(32 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$3.99</span>
+                              <span class="sale-price">$4.99</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                This login page is a visually appealing and intuitive interface that guides new users through the account creation process. The bright yellow background paired with a prominent call-to-action button creates an inviting atmosphere. The form fields are clearly labeled and pre-filled with example text to simplify the process. Additionally, the inclusion of a "Login Here" link caters to existing members.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/index2.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFjy1DPBNraHLd9abL7YI3D"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="loginPage2ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('loginPage2')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="loginPage2ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="loginPage2SavedReviews"></div>
-          </div>
-        </div>
+      </div>
     </div>
     
     <a href="#" onclick="toggleProductDetails('loginPage4Details')" class="product-card-link">
@@ -223,47 +257,64 @@
     <!-- Full-screen Product Details Section -->
     <div class="product-details-overlay" id="loginPage4Details">
         <button class="close-btn" onclick="toggleProductDetails('loginPage4Details')"><i class='bx bx-x icon'></i></button>
-        <div class="product-details-content">
-            <h2 class="product-overlay-title">Login Page</h2>
-            <section class="wrapper" id="wrapper9">
-                <section class="image-grid">
-                    <img src="images/photoBack-main.png" alt="Todo App" />
-                    <img src="images/photoBack-top.png" alt="Todo App" />
-                    <img src="images/photoBack-btm.png" alt="Todo App" />
-                </section>
-            </section>
-            <p class="product-description">
-                An elegant Login Page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-            </p>
-            <p class="product-detail-price">$2.99</p>
-            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-            <stripe-buy-button
-                buy-button-id="buy_btn_1QFk3YDPBNraHLd9z4Hz7bg3"
-                publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85">
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="loginPage3ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="loginPage3NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="loginPage3StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/photoBack-main.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/photoBack-main.png" alt="" class="image-list">
+                              <img src="images/photoBack-top.png" alt="" class="image-list">
+                              <img src="images/photoBack-btm.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Login page</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Login page</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star-half"></i></span>
+                              <span class="review">(56 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$3.99</span>
+                              <span class="sale-price">$4.99</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                This login page offers a clean and minimalist design, focusing on essential elements. The image background creates a calming and professional atmosphere. The form fields are well-spaced and easy to navigate, ensuring a smooth user experience. The prominent orange "Log In" button stands out against the background, guiding users to the next step. Additionally, the "Forgot Password?" link provides a convenient option for users who may need assistance.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/index7.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFk3YDPBNraHLd9z4Hz7bg3"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85">
+                          </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="loginPage3ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('loginPage3')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="loginPage3ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="loginPage3SavedReviews"></div>
-          </div>
-        </div>
+      </div>
     </div>
     
     </section>
@@ -289,51 +340,66 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay2" id="loginPage2Details">
         <button class="close-btn" onclick="toggleProductDetails('loginPage2Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">Login Page</h2>
-          <section class="wrapper" id="wrapper5">
-            <section class="image-grid">
-              <img src="images/green-zoom-TOP.png" alt="Todo App" />
-              <img src="images/green-zoom-DWO.png" alt="Todo App" />
-              <img src="images/green-zoom-UP.png" alt="Todo App" />
-              <img src="images/green-main.png" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant login page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$1.50</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QFjxNDPBNraHLd9r6pUmlGh"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="loginPage4ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="loginPage4NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="loginPage4StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/green-main.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/green-main.png" alt="" class="image-list">
+                              <img src="images/green-zoom-TOP.png" alt="" class="image-list">
+                              <img src="images/green-zoom-UP.png" alt="" class="image-list">
+                              <img src="images/green-zoom-DWO.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Login page</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Login page</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star-half"></i></span>
+                              <span class="review">(24 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$1.50</span>
+                              <span class="sale-price">$2.99</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                This login page offers a clear and straightforward design, focusing on the essential elements. The green background creates a calm and inviting atmosphere. The form fields are well-spaced and easy to navigate, ensuring a smooth user experience. The prominent red "Login" button stands out against the background, guiding users to the next step. Additionally, the "Forgot Password?" and "Sign Up" links provide convenient options for users who may need assistance or wish to create a new account.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/index1.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFjxNDPBNraHLd9r6pUmlGh"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="loginPage4ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('loginPage4')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="loginPage4ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="loginPage4SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
 
       <a href="#" onclick="toggleProductDetails('multiStepLogin2Details')" class="product-card-link">
@@ -355,49 +421,64 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay2" id="multiStepLogin2Details">
         <button class="close-btn" onclick="toggleProductDetails('multiStepLogin2Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">Multi-step Login Page</h2>
-          <section class="wrapper" id="wrapper4">
-            <section class="image-grid">
-              <img src="images/2-step-log1.png" alt="Todo App" />
-              <img src="images/2-step-log-1.1.png" alt="Add Todo" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant login page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$2.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QFk4zDPBNraHLd9EOy6zOYw"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="loginPage5ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="loginPage5NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="loginPage5StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/2-step-log1.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/2-step-log1.png" alt="" class="image-list">
+                              <img src="images/2-step-log-1.1.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Multi-step Login Page</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Multi-step Login Page</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(19 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$2.99</span>
+                              <span class="sale-price">$3.99</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                  An elegant Login Page which improves security by guiding users through separate steps to insure accuracy with reduced errors and enhances user confidence with clear feedback at each stage.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/index9.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFk4zDPBNraHLd9EOy6zOYw"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="loginPage5ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('loginPage5')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="loginPage5ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="loginPage5SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
 
       <a href="#" onclick="toggleProductDetails('multiStepLogin1Details')" class="product-card-link">
@@ -419,50 +500,65 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay2" id="multiStepLogin1Details">
         <button class="close-btn" onclick="toggleProductDetails('multiStepLogin1Details')"><i class='bx bx-x icon'></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">Multi-step login page</h2>
-          <section class="wrapper" id="wrapper3">
-            <section class="image-grid">
-              <img src="images/2-step-1.png" alt="Add Todo" />
-              <img src="images/2-step-2.png" alt="Todo Done" />
-              <img src="images/2-step-zoom.png" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            A multi-step login page improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$2.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-          <stripe-buy-button
-          buy-button-id="buy_btn_1QFk4ZDPBNraHLd9aib6HtiD"
-          publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-        >
-        </stripe-buy-button>
-        <div class="separator-icon">
-          <hr>
-          <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-          <hr>
-        </div>
-        <div class="review-section" id="loginPage6ReviewSection">
-          <h2>Leave a Review</h2>
-          <input type="text" id="loginPage6NameInput" placeholder="Your Name" />
-          <div class="star-rating" id="loginPage6StarRating">
-              <span class="star" data-rating="1">&#9733;</span>
-              <span class="star" data-rating="2">&#9733;</span>
-              <span class="star" data-rating="3">&#9733;</span>
-              <span class="star" data-rating="4">&#9733;</span>
-              <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/login-page.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/login-page.png" alt="" class="image-list">
+                              <img src="images/2-step-1.png" alt="" class="image-list">
+                              <img src="images/2-step-2.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Multi-step login Page</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Multi-step login Page</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star-half"></i></span>
+                              <span class="review">(25 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$2.99</span>
+                              <span class="sale-price">$3.50</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                  A multi-step login page improves security by guiding users through separate steps ti ensure security and accuracy with reduced errors and enhances user confidence with clear feedback at each stage. The form is equipped with a gradient background that is editable</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/index8.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFk4ZDPBNraHLd9aib6HtiD"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <textarea id="loginPage6ReviewInput" placeholder="Write your review here..."></textarea>
-          <button onclick="saveReview('loginPage6')">Submit Review</button>
       </div>
-      <div class="reviews-container" id="loginPage6ReviewsContainer">
-          <h2>Reviews</h2>
-          <div id="loginPage6SavedReviews"></div>
-      </div>
-        </div>
       </div>        
     </section>
 
@@ -486,50 +582,65 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay3" id="2-side-log-Details">
         <button class="close-btn" onclick="toggleProductDetails('2-side-log-Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">2 sided Login Page</h2>
-          <section class="wrapper" id="wrapper7">
-            <section class="image-grid">
-              <img src="images/2-sec-left.png" alt="Todo App" />
-              <img src="images/2-sec-right.png" alt="Todo App" />
-              <img src="images/2-sec-both.png" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant 2 sided Login Page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$2.00</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QFjyWDPBNraHLd9YaByskLC"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="loginPage7ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="loginPage7NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="loginPage7StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/2-sec-both.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/2-sec-both.png" alt="" class="image-list">
+                              <img src="images/2-sec-left.png" alt="" class="image-list">
+                              <img src="images/2-sec-right.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">2 sided Login Page</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>2 sided Login Page</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+  
+                              <span class="review">(5 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$2.00</span>
+                              <span class="sale-price">$3.00</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                  A 2 sided Login Page with two sidess, a welcome message and the form part. With reduced errors which enhances user experience and usability at each stage.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/index5.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFjyWDPBNraHLd9YaByskLC"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="loginPage7ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('loginPage7')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="loginPage7ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="loginPage7SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
 
@@ -554,49 +665,66 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay4" id="pricing2-Details">
         <button class="close-btn" onclick="toggleProductDetails('pricing2-Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">Pricing Cards</h2>
-          <section class="wrapper" id="wrapper10">
-            <section class="image-grid">
-              <img src="images/pricing-basic.png" alt="Todo App" />
-              <img src="images/pricing-standard.png" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant Login Page which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$3.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QFk30DPBNraHLd9HngXnPtA"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="pricingCards1ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="pricingCards1NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="pricingCards1StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/pricing-whole.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/pricing-whole.png" alt="" class="image-list">
+                              <img src="images/pricing-basic.png" alt="" class="image-list">
+                              <img src="images/pricing-standard.png" alt="" class="image-list">
+                              <img src="images/pricing-premium.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Pricing Cards</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Pricing Cards</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(51 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$3.99</span>
+                              <span class="sale-price">$5.00</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                Pricing Cards puts the power of visual persuasion in your hands. Showcase your offerings in a clean, professional manner that leaves a lasting impression on your audience. Whether you're selling digital products, services, or physical goods, these cards will help you close more sales.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/wh-price-card.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFk30DPBNraHLd9HngXnPtA"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="pricingCards1ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('pricingCards1')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="pricingCards1ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="pricingCards1SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
 
       <a href="#" onclick="toggleProductDetails('pricing1-Details')" class="product-card-link">
@@ -618,49 +746,67 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay4" id="pricing1-Details">
         <button class="close-btn" onclick="toggleProductDetails('pricing1-Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">Pricing Cards</h2>
-          <section class="wrapper" id="wrapper8">
-            <section class="image-grid">
-              <img src="images/graPricing-basic.png" alt="Todo App" />
-              <img src="images/graPricing-standard.png" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant Pricing Cards which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$3.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QFk3xDPBNraHLd92ZzsYewG"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="pricingCards2ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="pricingCards2NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="pricingCards2StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/graPricing-whole.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/graPricing-whole.png" alt="" class="image-list">
+                              <img src="images/graPricing-basic.png" alt="" class="image-list">
+                              <img src="images/graPricing-standard.png" alt="" class="image-list">
+                              <img src="images/graPricing-premium.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">Pricing Cards</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>Pricing Cards</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(69 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$3.99</span>
+                              <span class="sale-price">$5.00</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                Pricing Cards takes the guesswork out of presenting your offerings in a way that resonates with customers. Stop burying your prices in boring product pages - let these visually striking cards do the selling for you.
+                                Whether you're an ecommerce store, SaaS business, or any company with a pricing model, Pricing Cards will help you close more deals. Impress your audience, differentiate your brand, and watch your revenue grow.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/demo/or-price-card.html" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFk3xDPBNraHLd92ZzsYewG"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="pricingCards2ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('pricingCards2')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="pricingCards2ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="pricingCards2SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
 
@@ -686,50 +832,65 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay5" id="toDoApp1Details">
         <button class="close-btn" onclick="toggleProductDetails('toDoApp1Details')"><i class='bx bx-x icon'></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">To Do App</h2>
-          <section class="wrapper" id="wrapper2">
-            <section class="image-grid">
-              <img src="images/todo-app.png" alt="Todo App" />
-              <img src="images/todo-add.png" alt="Add Todo" />
-              <img src="images/todo-done.png" alt="Todo Done" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant To-Do App which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$4.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QDdKXDPBNraHLd9YH8Wih7a"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="toDoApp1ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="toDoApp1NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="toDoApp1StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/todo-app.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/todo-app.png" alt="" class="image-list">
+                              <img src="images/todo-add.png" alt="" class="image-list">
+                              <img src="images/todo-done.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">To Do App</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>To Do App</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(40 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$4.99</span>
+                              <span class="sale-price">$6.00</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                The To Do App is your gateway to productivity bliss. Its beautiful, gradient-infused design makes task planning a pleasure, not a chore. Stay on top of your to-dos, projects, and deadlines with a clean, clutter-free interface that keeps you focused and motivated. Sync everything across your phone, tablet, and computer for total control over your schedule, wherever you are.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                            <a href="https://mirwais-h.github.io/todo" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QDdKXDPBNraHLd9YH8Wih7a"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="toDoApp1ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('toDoApp1')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="toDoApp1ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="toDoApp1SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
 
       <a href="#" onclick="toggleProductDetails('toDoApp2Details')" class="product-card-link">
@@ -750,51 +911,66 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay5" id="toDoApp2Details">
         <button class="close-btn" onclick="toggleProductDetails('toDoApp2Details')"><i class='bx bx-x icon'></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">To Do App</h2>
-          <section class="wrapper" id="wrapper2">
-            <section class="image-grid">
-              <img src="images/to.do.log.png" alt="Todo App" />
-              <img src="images/to.do.main.png" alt="Add Todo" />
-              <img src="images/to.do.add.png" alt="Todo add" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant To-Do App which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$5.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-        
-        <stripe-buy-button
-          buy-button-id="buy_btn_1QLGzmDPBNraHLd9laa7WOwf"
-          publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-        >
-        </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="toDoApp1ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="toDoApp1NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="toDoApp1StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/to.do.main.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/to.do.main.png" alt="" class="image-list">
+                              <img src="images/to.do.log.png" alt="" class="image-list">
+                              <img src="images/to.do.add.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">To Do App</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>To Do App</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(30 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$5.99</span>
+                              <span class="sale-price">$7.00</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                Our To Do App is designed to be your personal assistant, keeping you organized and on top of your game. No more scattered sticky notes or overwhelming mental checklists. With just a few taps, you'll have full visibility and control over your tasks, priorities, and deadlines. Regain your focus and achieve your goals with ease.
+                                Whether you're a busy professional, a student juggling classes, or a parent managing a household, our To Do App is the solution that will transform your productivity and give you the freedom to spend more time on what matters most. Say goodbye to the stress of forgetfulness and take charge of your to-do's today.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                              <a href="https://mirwais-h.github.io/to.do" class="button buy-now" target="_blank">View Demo</a>
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QLGzmDPBNraHLd9laa7WOwf"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="toDoApp1ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('toDoApp1')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="toDoApp1ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="toDoApp1SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
 
       <a href="#" onclick="toggleProductDetails('course1Details')" class="product-card-link">
@@ -815,51 +991,65 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay5" id="course1Details">
         <button class="close-btn" onclick="toggleProductDetails('course1Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">English Course</h2>
-          <section class="wrapper" id="wrapper1">
-            <section class="image-grid">
-              <img src="images/engCourse-less.png" alt="Todo App" />
-              <img src="images/engCourse-toplesn.png" alt="Todo App" />
-              <img src="images/engCourse-btmlesn.png" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant English Course which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$9.99</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-        <stripe-buy-button
-        buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
-        publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-        >
-        </stripe-buy-button>
-        <div class="separator-icon">
-          <hr>
-          <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-          <hr>
-        </div>
-
-          <div class="review-section" id="course1ReviewSection">
-            <h2>Leave a Review</h2>
-            <input type="text" id="course1NameInput" placeholder="Your Name" />
-            <div class="star-rating" id="course1StarRating">
-                <span class="star" data-rating="1">&#9733;</span>
-                <span class="star" data-rating="2">&#9733;</span>
-                <span class="star" data-rating="3">&#9733;</span>
-                <span class="star" data-rating="4">&#9733;</span>
-                <span class="star" data-rating="5">&#9733;</span>
-            </div>
-            <textarea id="course1ReviewInput" placeholder="Write your review here..."></textarea>
-            <button onclick="saveReview('course1')">Submit Review</button>
-        </div>
-        <div class="reviews-container" id="course1ReviewsContainer">
-            <h2>Reviews</h2>
-            <div id="course1SavedReviews"></div>
-        </div>
-        </div>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/engCourse-main.png" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/engCourse-main.png" alt="" class="image-list">
+                              <img src="images/engCourse-less.png" alt="" class="image-list">
+                              <img src="images/engCourse-toplesn.png" alt="" class="image-list">
+                              <img src="images/engCourse-btmlesn.png" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">English Course</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>English Course</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(20 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$9.99</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                Mastering English has never been easier. Our course is packed with practical lessons and engaging activities that will have you speaking like a pro in no time. Whether you're looking to advance your career, travel the world, or connect with new people, this course is your ticket to fluency.
+                                This course is perfect for busy professionals, frequent travelers, and anyone who wants to improve their English communication skills. With our expert-led lessons and intuitive learning platform, you'll be speaking English with confidence in just a matter of weeks.</p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QFlXJDPBNraHLd9srEjAFDU"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                              >
+                              </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
       </div>
     </section>
 
@@ -883,51 +1073,63 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay6" id="print1Details">
         <button class="close-btn" onclick="toggleProductDetails('print1Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">T-shirt Designs</h2>
-          <section class="wrapper" id="wrapper1">
-            <section class="image-grid">
-              <img src="images/printImg-main.webp" alt="Todo App" />
-              <img src="images/printImg1.jpeg" alt="Todo App" />
-              <img src="images/printImg2.jpeg" alt="Todo App" />
-              <img src="images/printImg3.jpeg" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant English Course which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$1.00</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="printables1ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="printables1NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="printables1StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/printImg-main.webp" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/printImg-main.webp" alt="" class="image-list">
+                              <img src="images/printImg1.jpeg" alt="" class="image-list">
+                              <img src="images/printImg2.jpeg" alt="" class="image-list">
+                              <img src="images/printImg3.jpeg" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="product.html">Products</a></span>
+                          <span class="active">T-shirt Designs</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>T-shirt Designs</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(10 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$1.00</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                Printable designs for hundreds of T-shirts that will boost not only your store's customers but also your reputation and business.
+                              </p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="printables1ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('printables1')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="printables1ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="printables1SavedReviews"></div>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
 
