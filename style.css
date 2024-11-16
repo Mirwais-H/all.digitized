@@ -412,7 +412,7 @@ section#products {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: auto; /* Added scroll feature */
+  overflow-y: scroll; /* Added scroll feature */
   margin-top: 10px;
 }
 
@@ -725,14 +725,13 @@ section#products {
 @media screen and (max-width: 720px) {
   .container {
     padding: 10px;
-    height: auto;
     width: 100%;
+    height: auto;
   }
 
   .row {
     display: block;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin: 100px 0 20px;
   }
 
   .col-6 {
@@ -758,7 +757,7 @@ section#products {
   }
 
   .product-title h2 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.6rem;
   }
 
@@ -779,6 +778,10 @@ section#products {
     flex-direction: column;
     gap: 10px;
   }
+
+  .product-price .offer-price {
+    font-size: 30px;
+  }
 }
 
 /* Tablet */
@@ -791,7 +794,7 @@ section#products {
 }
 
 /* Full-Screen Product Details Overlay for Small Screens */
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   .product-details-overlay,
   .product-details-overlay2,
   .product-details-overlay3,
@@ -835,18 +838,6 @@ section#products {
     font-size: 20px;
   }
 
-  /* Adjustments for Carousel Wrapper on Small Screens */
-  .wrapper {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-
-  .image-container {
-    height: 200px;
-    width: 300px;
-  }
 
   .go-top-btn {
     width: 30px;
