@@ -101,53 +101,64 @@
       <!-- Full-screen Product Details Section -->
       <div class="product-details-overlay" id="print1Details">
         <button class="close-btn" onclick="toggleProductDetails('print1Details')"><i class='bx bx-x icon' ></i></button>
-        <div class="product-details-content">
-          <h2 class="product-overlay-title">T-shirt Designs</h2>
-          <section class="wrapper" id="wrapper1">
-            <section class="image-grid">
-              <img src="images/printImg-main.webp" alt="Todo App" />
-              <img src="images/printImg1.jpeg" alt="Todo App" />
-              <img src="images/printImg2.jpeg" alt="Todo App" />
-              <img src="images/printImg3.jpeg" alt="Todo App" />
-            </section>
-          </section>
-          <p class="product-description">
-            An elegant English Course which improves security by guiding users through separate steps, like entering a name, email, username, and password. With reduced errors and enhances user confidence with clear feedback at each stage.
-          </p>
-          <p class="product-detail-price">$1.00</p>
-          <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-              <stripe-buy-button
-              buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
-              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
-            >
-            </stripe-buy-button>
-            <div class="separator-icon">
-              <hr>
-              <span>★★★</span> <!-- You can replace the star with any other icon or symbol -->
-              <hr>
-            </div>
-            <div class="review-section" id="printables1ReviewSection">
-              <h2>Leave a Review</h2>
-              <input type="text" id="printables1NameInput" placeholder="Your Name" />
-              <div class="star-rating" id="printables1StarRating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
+        <div class="container">
+          <div class="single-product">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="product-image">
+                          <div class="product-image-main">
+                              <img src="images/printImg-main.webp" alt="" class="product-main-image">
+                          </div>
+                          <div class="product-image-slider">
+                              <img src="images/printImg-main.webp" alt="" class="image-list">
+                              <img src="images/printImg1.jpeg" alt="" class="image-list">
+                              <img src="images/printImg2.jpeg" alt="" class="image-list">
+                              <img src="images/printImg3.jpeg" alt="" class="image-list">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="breadcrumb">
+                          <span><a href="print.html">Printables</a></span>
+                          <span class="active">T-shirt Designs</span>
+                      </div>
+  
+                      <div class="product">
+                          <div class="product-title">
+                              <h2>T-shirt Designs</h2>
+                          </div>
+                          <div class="product-rating">
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span><i class="bx bxs-star"></i></span>
+                              <span class="review">(10 Review)</span>
+                          </div>
+                          <div class="product-price">
+                              <span class="offer-price">$1.00</span>
+                          </div>
+  
+                          <div class="product-details">
+                              <h3>Description</h3>
+                              <p>
+                                Printable designs for hundreds of T-shirts that will boost not only your store's customers but also your reputation and business.
+                              </p>
+                          </div>
+                          <span class="divider"></span>
+  
+                          <div class="product-btn-group">
+                              <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                              <stripe-buy-button
+                              buy-button-id="buy_btn_1QDgptDPBNraHLd94Sj3FaKj"
+                              publishable-key="pk_live_51MtLboDPBNraHLd90cGAGtjqJFp3V1tVLhgb6Hz86EcLrnFPyg103J3ESoUsgDqZu36MWRFi7HRCFIIRYlXkrvcW004rJ8Sl85"
+                            >
+                            </stripe-buy-button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <textarea id="printables1ReviewInput" placeholder="Write your review here..."></textarea>
-              <button onclick="saveReview('printables1')">Submit Review</button>
           </div>
-          <div class="reviews-container" id="printables1ReviewsContainer">
-              <h2>Reviews</h2>
-              <div id="printables1SavedReviews"></div>
-          </div>
-        </div>
       </div>
-
+      </div>
     </section> 
   </div>  
 </section>
