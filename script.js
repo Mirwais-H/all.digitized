@@ -20,93 +20,18 @@ function toggleProductDetails(id) {
 
 
 
-// This will store the selected rating for each product separately
-let selectedRatings = {};
+document.querySelectorAll('.product-image').forEach((productImageContainer) => {
+  const mainImage = productImageContainer.querySelector('.product-main-image');
+  const imageList = productImageContainer.querySelectorAll('.image-list');
 
-// Add event listeners to all star ratings
-document.querySelectorAll('.star-rating').forEach((ratingContainer) => {
-  const productId = ratingContainer.id.replace('StarRating', '');
-  selectedRatings[productId] = 0;
-
-  ratingContainer.querySelectorAll('.star').forEach((star) => {
-    star.addEventListener('click', function() {
-      selectedRatings[productId] = this.getAttribute('data-rating');
-      highlightStars(productId, selectedRatings[productId]);
-    });
+  imageList.forEach((image) => {
+      image.addEventListener('click', () => {
+          mainImage.src = image.src;
+          console.log(mainImage.src);
+      });
   });
 });
 
-function highlightStars(productId, rating) {
-  const stars = document.querySelectorAll(`#${productId}StarRating .star`);
-  stars.forEach((star) => {
-    star.classList.toggle('active', star.getAttribute('data-rating') <= rating);
-  });
-}
-
-function saveReview(productId) {
-  const nameInput = document.getElementById(`${productId}NameInput`);
-  const reviewInput = document.getElementById(`${productId}ReviewInput`);
-  const name = nameInput.value.trim();
-  const reviewText = reviewInput.value.trim();
-
-  if (!name || !reviewText || selectedRatings[productId] === 0) {
-    alert('Please complete all fields, including a star rating.');
-    return;
-  }
-
-  const review = {
-    name: name,
-    rating: selectedRatings[productId],
-    text: reviewText
-  };
-
-  let reviews = JSON.parse(localStorage.getItem(productId)) || [];
-  reviews.push(review);
-  localStorage.setItem(productId, JSON.stringify(reviews));
-
-  displayReviews(productId);
-  clearForm(nameInput, reviewInput, productId);
-}
-
-function displayReviews(productId) {
-  const reviewsContainer = document.getElementById(`${productId}SavedReviews`);
-  reviewsContainer.innerHTML = '';
-  const reviews = JSON.parse(localStorage.getItem(productId)) || [];
-
-  reviews.forEach((review) => {
-    const reviewItem = document.createElement('div');
-    reviewItem.classList.add('review-item');
-
-    const name = document.createElement('h4');
-    name.textContent = review.name;
-
-    const rating = document.createElement('div');
-    rating.innerHTML = '⭐'.repeat(review.rating);
-
-    const text = document.createElement('p');
-    text.textContent = review.text;
-
-    reviewItem.appendChild(name);
-    reviewItem.appendChild(rating);
-    reviewItem.appendChild(text);
-    reviewsContainer.appendChild(reviewItem);
-  });
-}
-
-function clearForm(nameInput, reviewInput, productId) {
-  nameInput.value = '';
-  reviewInput.value = '';
-  selectedRatings[productId] = 0;
-  highlightStars(productId, selectedRatings[productId]);
-}
-
-// Initialize reviews on page load for all products
-window.onload = function() {
-  document.querySelectorAll('.review-section').forEach((reviewSection) => {
-    const productId = reviewSection.id.replace('ReviewSection', '');
-    displayReviews(productId);
-  });
-};
 
 
 
